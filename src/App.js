@@ -139,9 +139,45 @@ function App() {
           <img src="https://www.boredbunny.io/images/img23.png" />
         </div>
         <div className="seventhPage-bottomImage">
-          <img src="https://www.boredbunny.io/images/img12.png" height="100%" width="100%"/>
+          <img src="https://www.boredbunny.io/images/img12.png" height="100%" width="100%" />
+        </div>
+
+      </div>
+      <div className="eight-page">
+        <div className="eightPage-heading">
+          <h3>JOIN THE COMMUNITY NOW</h3>
+          <h4>
+            TOGETHER WE GOING TO BUILD THE BEST COMMUNITY IN THE NFT SPACE, LET'S SHOW THE WORLD HOW INFLUENT AND ENGAGED WE ARE WE <br />
+            ARE GOING TO TAKE OVER THE METAVERSE AND NFT SPACE
+          </h4>
+        </div>
+        <div className="eightPage-second-container">
+          <div className="eightPage-second-container-subHeading">
+            <h3>
+              Together, let’s build the best exclusive<br />
+              club never seen before. Show to <br />
+              the world how strong and influent we are. <br />
+              Let’s take over the Metaverse.
+            </h3>
+            <div>
+              <button className="eightPage-second-container-dButton">JOIN OUR DISCORD</button>
+              <button className="eightPage-second-container-FButton">FOLLOW US</button>
+            </div>
+          </div>
+          <div>
+            <img src="https://www.boredbunny.io/images/img16.png" />
+          </div>
         </div>
       </div>
+
+     <div className="final-page">
+       <div className="finalPage-heading">
+         <h3>
+            FREQUENTLY<br/>
+            ASKED QUESTIONS
+            </h3>
+       </div>
+     </div>
 
     </div>
   );

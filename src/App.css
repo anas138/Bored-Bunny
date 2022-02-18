@@ -200,8 +200,93 @@ body{
 .seventhPage-bottomImage{
   
   position: absolute;
-  top: 1480px;
+  top: 1520px;
   right: 0;
   height: 500px;
   width: 500px;
+}
+.eight-page{
+  background-image: url("https://www.boredbunny.io/images/img10.png");
+  padding: 115px 0 468px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.eightPage-heading{
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+}
+.eightPage-heading h3{
+  font-size: 55px;
+    margin: 0 0 10px;
+    font-family: 'Rubik';
+    font-weight: 700;
+    text-align: center;
+}
+.eightPage-second-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.eightPage-second-container-subHeading{
+  font-size: 29px;
+    margin: 0 0 45px;
+    max-width: 588px;
+    color: #fff;
+    font-family: 'Rubik';
+    font-weight: 500;
+}
+.eightPage-second-container-dButton{
+   font-size: 17px;
+    background-image: linear-gradient(to right,#a7d451,#bcc332,#ceb017,#de9c08,#ec8515);
+    border-radius: 50px;
+    padding: 22px 44px;
+    color: #fff;
+    font-family: 'Poppins';
+    font-weight: 700;
+    border: 0;
+   
+}
+.eightPage-second-container-FButton{
+  margin-left: 10px;
+   border-radius: 50px;
+    padding: 22px 44px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    border: 2px solid white;
+    background-color: transparent;
+    color: #09f;
+   
+}
+.final-page{
+    background-color: #13131c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.finalPage-heading{
+  margin: 20px;
+  padding: 20px;
+  background-color: #323030;
+}
+.finalPage-heading h3{
+  
+  font-size: 55px;
+    color: #fff;
+    margin: 0 0 10px;
+    font-family: 'Rubik';
+    font-weight: 700;
+    text-align: center;
 }

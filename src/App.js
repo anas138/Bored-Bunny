@@ -1,7 +1,12 @@
-
+import React, { useEffect } from "react"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="App">
 
@@ -26,7 +31,7 @@ function App() {
 
         </div>
 
-        <div className={"paragraph"}>
+        <div className={"paragraph"} data-aos="fade-up" data-aos-duration="1000">
           <p>READY TO TAKE OVER THE METAVERSE AND THE NFT SPACE</p>
           <h3> JOIN BORED BUNNY</h3>
           <p>   Bored Bunny is your ticket into the largest and fastest growing NFT Project</p>
@@ -37,7 +42,7 @@ function App() {
 
 
       <div className={"second-page"}>
-        <div className={"paragraph"}>
+        <div className={"secondPage-paragraph"} data-aos="fade-up" data-aos-duration="1000">
           <p>Welcome To The Exclusive Bored Bunny</p>
           <p>Join this ultra-exclusive NFT project featuring not only authentic art, but unmatched</p>
           <p>utility!</p>
@@ -50,14 +55,14 @@ function App() {
 
       <div className="third-page">
         <div>
-          <img src="https://www.boredbunny.io/images/img_round2.png" />
+          <img src="https://www.boredbunny.io/images/img_round2.png"  data-aos="fade-right" data-aos-duration="1000" />
         </div>
-        <div className="thirdPage-text">
-          <div className="thirdPage-text-heading0ne">
+        <div className="thirdPage-text" data-aos="fade-left" data-aos-duration="1000">
+          <div className="thirdPage-text-heading0ne" >
             <h3>WHAT IS<br />
               BORED BUNNY?</h3>
           </div>
-          <div className="thirdPage-text-headingtwo">
+          <div className="thirdPage-text-headingtwo"  >
             <h3>Bored Bunny is a collection of 4,999 unique 3D well-<br />
               designed Bunnies united together to get on the Ethereum<br />
               Blockchain</h3>
@@ -80,7 +85,7 @@ function App() {
       </div>
 
 
-      <div className="fourth-Page">
+      <div className="fourth-Page" data-aos="zoom-in" data-aos-duration="1000">
         <div>
           <img src="https://www.boredbunny.io/images/img3.png" width="100%" />
         </div>
@@ -120,7 +125,7 @@ function App() {
           <h4>DISCOVER OUR 10 LEGENDARY BORED BUNNY - THEY ARE THE RAREST</h4>
         </div>
 
-        <div className="sixthPage-imageContainer">
+        <div className="sixthPage-imageContainer" data-aos="zoom-in" data-aos-duration="1000">
           <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" />
           <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" />
           <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" />
@@ -170,14 +175,14 @@ function App() {
         </div>
       </div>
 
-     <div className="final-page">
-       <div className="finalPage-heading">
-         <h3>
-            FREQUENTLY<br/>
+      <div className="final-page">
+        <div className="finalPage-heading">
+          <h3>
+            FREQUENTLY<br />
             ASKED QUESTIONS
-            </h3>
-       </div>
-     </div>
+          </h3>
+        </div>
+      </div>
 
     </div>
   );

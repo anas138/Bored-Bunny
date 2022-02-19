@@ -11,17 +11,17 @@ function App() {
     <div className="App">
 
       <div className={"first-page"}>
-        <div className={"head-container"}>
-          <ul className={"header-list"}>
-            <li>HOME</li>
-            <li>WHAT IS BORED BUNNY</li>
-            <li>BENEFITS & UTILITIES</li>
+        <div className={"head-container"} >
+          <ul className={"header-list"} id={"first-head-list"}>
+            <a><li>HOME</li></a>
+            <a><li>WHAT IS BORED BUNNY</li></a>
+            <a><li>BENEFITS & UTILITIES</li></a>
 
           </ul>
           <div>
             <img src={"https://www.boredbunny.io/images/logo.png"} />
           </div>
-          <ul className={"header-list"}>
+          <ul className={"header-list"} id={"second-head-list"}>
             <li>ROADMAP</li>
             <li>THE TEAM</li>
             <li>FAQ’S</li>
@@ -31,10 +31,10 @@ function App() {
 
         </div>
 
-        <div className={"paragraph"} data-aos="fade-up" data-aos-duration="1000">
+        <div className={"paragraph"} data-aos="fade-up" data-aos-duration="1500">
           <p>READY TO TAKE OVER THE METAVERSE AND THE NFT SPACE</p>
-          <h3> JOIN BORED BUNNY</h3>
-          <p>   Bored Bunny is your ticket into the largest and fastest growing NFT Project</p>
+          <h3><span id="join">JOIN</span> <span id="bored">BORED</span> BUNNY</h3>
+          <p>Bored Bunny is your ticket into the largest and fastest growing NFT Project</p>
           <button>Mint is Live</button>
         </div>
 
@@ -42,7 +42,7 @@ function App() {
 
 
       <div className={"second-page"}>
-        <div className={"secondPage-paragraph"} data-aos="fade-up" data-aos-duration="1000">
+        <div className={"secondPage-paragraph"} data-aos="fade-up" data-aos-duration="1500">
           <p>Welcome To The Exclusive Bored Bunny</p>
           <p>Join this ultra-exclusive NFT project featuring not only authentic art, but unmatched</p>
           <p>utility!</p>
@@ -55,9 +55,9 @@ function App() {
 
       <div className="third-page">
         <div>
-          <img src="https://www.boredbunny.io/images/img_round2.png"  data-aos="fade-right" data-aos-duration="1000" />
+          <img src="https://www.boredbunny.io/images/img_round2.png" data-aos="fade-right" data-aos-duration="1500" />
         </div>
-        <div className="thirdPage-text" data-aos="fade-left" data-aos-duration="1000">
+        <div className="thirdPage-text" data-aos="fade-left" data-aos-duration="1500">
           <div className="thirdPage-text-heading0ne" >
             <h3>WHAT IS<br />
               BORED BUNNY?</h3>
@@ -85,18 +85,18 @@ function App() {
       </div>
 
 
-      <div className="fourth-Page" data-aos="zoom-in" data-aos-duration="1000">
+      <div className="fourth-Page" >
         <div>
-          <img src="https://www.boredbunny.io/images/img3.png" width="100%" />
+          <img src="https://www.boredbunny.io/images/img3.png" width="100%" data-aos="zoom-in" data-aos-duration="1500" />
         </div>
         <div>
-          <img src="https://www.boredbunny.io/images/img4.png" width="100%" />
+          <img src="https://www.boredbunny.io/images/img4.png" width="100%" data-aos="zoom-in" data-aos-duration="1500" />
         </div>
         <div>
-          <img src="https://www.boredbunny.io/images/mg5.png" width="100%" />
+          <img src="https://www.boredbunny.io/images/mg5.png" width="100%" data-aos="zoom-in" data-aos-duration="1500" />
         </div>
         <div>
-          <img src="https://www.boredbunny.io/images/img6.png" width="100%" />
+          <img src="https://www.boredbunny.io/images/img6.png" width="100%" data-aos="zoom-in" data-aos-duration="1500" />
         </div>
         <div className="fourthPage-heading">
           BORED BUNNY
@@ -112,6 +112,110 @@ function App() {
         </div>
         <div className="fiftPage-img">
           <img src="https://www.boredbunny.io/images/img8.png" width="100%" />
+          <div className="fifthPage-inner-firstHeading" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+            <div className="fifthPage-inner-ineer-sub">
+              <img src="	https://www.boredbunny.io/images/icon1.png" style={{ "margin": "5px" }} />
+              <h3>
+                INCREASE THE <br />
+                VALUE OF YOUR NFT
+              </h3>
+            </div>
+            <span>If you are lucky and mint one of our rare NFT <br />
+              you can 2x, 5x, maybe even 10x the value of <br />
+              your investment within a few days.</span>
+
+          </div>
+
+
+          <div className="fifthPage-inner-secondHeading" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+            <div className="fifthPage-inner-second-sub">
+              <img src="	https://www.boredbunny.io/images/icon2.png" style={{ "margin": "5px" }} />
+              <h3>
+                ACCESS TO<br />
+                PRIVATE EVENTS
+              </h3>
+            </div>
+            <span>A big party will be organised to reward all of <br />
+              our holders and to celebrate the achievement <br />
+              of our goals. Bali, LA, Dubai ? The community <br />
+              choose.</span>
+
+          </div>
+
+
+          <div className="fifthPage-inner-thirdHeading" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+            <div className="fifthPage-inner-third-sub">
+              <img src="https://www.boredbunny.io/images/icon3.png" style={{ "margin": "5px" }} />
+              <h3>
+                OUR<br />
+                METAVERSE
+              </h3>
+            </div>
+            <span>They will be able to wear their 3D Bored <br />
+              and join Bored Bunny City, a Private Land on <br />
+              the Metaverse where only our community can <br />
+              have access.</span>
+
+          </div>
+
+
+          <div className="fifthPage-inner-fourthHeading" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+            <div className="fifthPage-inner-fourth-sub">
+              <img src="https://www.boredbunny.io/images/icon4.png" style={{ "margin": "5px" }} />
+              <h3>
+                HOLDERS<br />
+                REWARDS
+              </h3>
+            </div>
+            <span>The holders will get access to our community <br />
+              funds used to ​​invest, reward, and collaborate <br />
+              with the best projects in the space and <br />
+              projects ideas of our members</span>
+
+          </div>
+
+
+
+          <div className="fifthPage-inner-fifthhHeading" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+            <div className="fifthPage-inner-fifth-sub">
+              <img src="https://www.boredbunny.io/images/icon5.png" style={{ "margin": "5px" }} />
+              <h3>
+                BREED <br />
+                YOUR NFT
+              </h3>
+            </div>
+            <span>Bored Bunny owners can breed their Bunnies <br />
+              to create a 2nd Generation Bunny. Just keep in <br />
+              mind, you'll need a total of 2 Bored Bunny to <br />
+              breed, so hop to it</span>
+
+          </div>
+
+
+          <div className="fifthPage-inner-sixthhhHeading">
+            <img src="https://www.boredbunny.io/images/round_img_1.png" style={{ "margin": "5px" }} width="250px" height="250px" />
+            <svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 1000" className="sixth-svg">
+            <title>Visit Site Link</title>
+            <defs>
+              <path d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" id="textcircle">
+                <animateTransform
+                  attributeName="transform"
+                  begin="0s"
+                  dur="30s"
+                  type="rotate"
+                  from="0 250 250"
+                  to="360 250 250"
+                  repeatCount="indefinite"
+                />
+              </path>
+            </defs>
+            <text dy="70" textLength="1220">
+              <textPath href="#textcircle">GET YOUR BORED BUNNY</textPath>
+            </text>
+          </svg>
+          </div>
+          
+
         </div>
       </div>
 
@@ -125,12 +229,12 @@ function App() {
           <h4>DISCOVER OUR 10 LEGENDARY BORED BUNNY - THEY ARE THE RAREST</h4>
         </div>
 
-        <div className="sixthPage-imageContainer" data-aos="zoom-in" data-aos-duration="1000">
-          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" />
-          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" />
-          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" />
-          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" />
-          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" />
+        <div className="sixthPage-imageContainer" data-aos-duration="1500" data-aos-delay="100">
+          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100" />
+          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100" />
+          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100" />
+          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100" />
+          <img src="https://www.boredbunny.io/images/Legendary1.png" width="20%" height="100%" className="sixthPage-img" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="100" />
         </div>
       </div>
 
@@ -149,7 +253,7 @@ function App() {
 
       </div>
       <div className="eight-page">
-        <div className="eightPage-heading">
+        <div className="eightPage-heading" data-aos="fade-up" data-aos-duration="1500">
           <h3>JOIN THE COMMUNITY NOW</h3>
           <h4>
             TOGETHER WE GOING TO BUILD THE BEST COMMUNITY IN THE NFT SPACE, LET'S SHOW THE WORLD HOW INFLUENT AND ENGAGED WE ARE WE <br />
@@ -157,7 +261,7 @@ function App() {
           </h4>
         </div>
         <div className="eightPage-second-container">
-          <div className="eightPage-second-container-subHeading">
+          <div className="eightPage-second-container-subHeading" data-aos="fade-right" data-aos-duration="1500">
             <h3>
               Together, let’s build the best exclusive<br />
               club never seen before. Show to <br />
@@ -169,7 +273,7 @@ function App() {
               <button className="eightPage-second-container-FButton">FOLLOW US</button>
             </div>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-duration="1500">
             <img src="https://www.boredbunny.io/images/img16.png" />
           </div>
         </div>

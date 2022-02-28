@@ -1,480 +1,776 @@
-body{
-  background-color: #323030;
+@font-face {
+  font-family: "veener";
+  src: url("../public/font/Veneer.ttf");
+  
+  
 }
-.first-page{
-  background-image: url("https://www.boredbunny.io/images/banner_new.png");
+body{
+  font-family: "veener";
+  
+  
+}
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  
+  background-image: url("../public//banner.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+  
+
+}
+
+.header{
+  font-family: "veener";
+  background-image: url("../public/nav-bar.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200vh;
-
-}
-.head-container{
+  
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 1000px;
+  
+  
+  
+}
+.header a{
+  margin: 5px 30px;
+  padding: 2px;
+  color: whitesmoke;
+  cursor: pointer;
   text-decoration: none;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center;
-}
-.header-list{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style-type: none;
-}
-.header-list li{
-  color: white;
-  margin: 10px;
-  padding: 10px;
-  max-width: 200px;
-  cursor: pointer;
-}
-#second-head-list{
-  border-top: 1px solid rgb(156, 152, 152);;
-  border-bottom: 1px solid rgb(156, 152, 152);;
-  border-right: 1px solid rgb(156, 152, 152);;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  text-align: center;
+  opacity: 1;
+  
   
 }
-#first-head-list{
-  border-top: 1px solid rgb(156, 152, 152);
-  border-bottom: 1px solid rgb(156, 152, 152);;
-  border-left: 1px solid rgb(156, 152, 152);;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+.header a img{
+  margin-left: 5px;
+}
+.headerlogo{
+  width: 150px;
+  margin-right: 40px;
+}
 
+.home{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding: 50px;
+  
+  
 }
-.header-list button{
-  font-size: 14px;
-  padding: 5px 29px;
-  background-image: linear-gradient(to right,#a7d451,#bcc332,#ceb017,#de9c08,#ec8515);
-  border-radius: 50px;
-  color: #fff;
-  display: inline-block;
+.home-sub-text{
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+
+  
+}
+.home-sub-text h2{
+  font-size: 30px;
+  font-weight: 300px;
+} 
+.colored{
+  font-size: 60px;
+}
+.evil-text{
+  background-color: rgb(185, 21, 21);
   border: 0;
+  border-radius: 5px;
+  padding: 2px;
+}
+.home-button{
+  margin-top: 10px;
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: bold;
+  
   cursor: pointer;
+  width: 200px;
   
 }
-.paragraph{
-  margin: 0;
-  color: white;
+.calender{
+display: flex;
+flex-direction: column;
+background-color: rgb(185, 21, 21);
+border-radius: 10px;
+padding: 5px 5px;
+margin: 10px 10px;
+padding: 10px 10px;
+align-items: center;
+width: 30px;
+}
+.main-calender{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
-@keyframes mymove {
-  from {top: 200px;}
-  to {top: 0px;}
-  
-}
-.secondPage-paragraph{
-  margin: 0;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.second-page{
+
+#bottom-red{
+  background-color: rgb(185, 21, 21);
   margin-top: 0px;
-}
-
-
-.paragraph p{
-  color: white;
-  font-size: 28px;
-  font-weight: 500;
-}
-.secondPage-paragraph p{
-  color: white;
-  font-size: 28px;
-  font-weight: 500;
-}
-.paragraph h3{
-  font-size: 90px;
-  margin: 0;
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
-}
-
-.secondPage-paragraph h3{
-  font-size: 90px;
-  margin: 0;
-  text-align: center;
-  color: #fff;
-  font-weight: 700;
-}
-
-.paragraph button {
-  font-size: 17px;
-  background-image: linear-gradient(to right,#a7d451,#bcc332,#ceb017,#de9c08,#ec8515);
-  border-radius: 50px;
-  padding: 22px 44px;
-  color: #fff;
-  font-weight: 700;
-  display: inline-block;
-  border: 0;
-  cursor: pointer;
-}
-.secondPage-paragraph button {
-  font-size: 17px;
-  background-image: linear-gradient(to right,#a7d451,#bcc332,#ceb017,#de9c08,#ec8515);
-  border-radius: 50px;
-  padding: 22px 44px;
-  color: #fff;
-  font-weight: 700;
-  display: inline-block;
-  border: 0;
-  cursor: pointer;
-}
-.third-page{
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-}
-.thirdPage-text-heading0ne{
-   font-size: 70px;
-    color: #fff;
-    margin: 80px 0 40px;
-    font-family: 'Rubik';
-    font-weight: 700;
-}
-.thirdPage-text-headingtwo{
-  font-size: 17px;
-    margin: 0 0 35px;
-    padding-left: 40px;
-    position: relative;
-    color: #fff;
-    font-family: 'Poppins';
-    font-weight: 400;
-}
-.thirdPage-button{
-   font-size: 17px;
-    background-image: linear-gradient(to right,#a7d451,#bcc332,#ceb017,#de9c08,#ec8515);
-    border-radius: 50px;
-    padding: 22px 44px;
-    color: #fff;
-    font-family: 'Poppins';
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 210px;
-}
-.thirdPage-button button{
-  border: 0;
-  background-image: linear-gradient(to right,#a7d451,#bcc332,#ceb017,#de9c08,#ec8515);
-}
-.fourth-Page{
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-.fourthPage-heading{
-  position: absolute;
-  color: #fff;
-  text-align: center;
-  font-weight: 900;
-  font-size: 100px;
-  margin-bottom: 0px;
-  bottom: 0;
+  padding: 20px 0px;
+  border: 0px;
+  border-radius: 5px;
   
-  
+
 }
-.fifth-page{
+
+
+
+.RoadMap{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-
-}
-.fifthPage-firstHeading{
-  margin-top: 100px;
-    text-align: center;
-    
-    
-}
-.fifthPage-firstHeading h3{
-  color: #fff;
-}
-.fifthPage-firstHeading-sub{
-    font-size: 60px;
-    margin: 0 0 10px;
-    font-weight: 700;
-}
-.fiftPage-img{
-  margin-top: 20px;
+  
   position: relative;
-}
-.sixth-page{
-  background-color: #110f0f;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
- 
-}
-.sixth-page-first-heading{
-  color: #fff;
-}
-.sixth-page-first-heading h3{
-   font-size: 60px;
-    margin: 0 0 10px;
-    font-weight: 700;
-    text-align: center;
-}
-.sixthPage-img{
-  margin: 25px;
-}
-.sixthPage-imageContainer{
-  max-width: 1500px;
-  height: 300px;
-  overflow: hidden;
-
-}
-.seventh-page{
-  background-image: url("https://www.boredbunny.io/images/img9.png") ;
-    padding: 115px 0 468px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-.seventhPage-heading{
-  text-align: center;
-  
-}
-.seventhPage-heading h3{
-  font-size: 55px;
-}
-.seventhPage-bottomImage{
-  
-  position: absolute;
-  top: 1520px;
-  right: 0;
-  height: 500px;
-  width: 500px;
-}
-.eight-page{
-  background-image: url("https://www.boredbunny.io/images/img10.png");
-  padding: 115px 0 468px;
+  background-image: url("../public/road-map-bg.jpg");
+  background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
-  position:relative;
-  bottom: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 50px;
+  min-height: 100vh;
+  border-bottom:  2px solid  rgb(185, 21, 21);
   
-}
-.eightPage-heading{
-  margin-top: 50px;
-  text-align: center;
-  color: #fff;
-}
-.eightPage-heading h3{
-  font-size: 55px;
-    margin: 0 0 10px;
-    font-family: 'Rubik';
-    font-weight: 700;
-    text-align: center;
-}
-.eightPage-second-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-.eightPage-second-container-subHeading{
-  font-size: 29px;
-    margin: 0 0 45px;
-    max-width: 588px;
-    color: #fff;
-    font-family: 'Rubik';
-    font-weight: 500;
-}
-.eightPage-second-container-dButton{
-   font-size: 17px;
-    background-image: linear-gradient(to right,#a7d451,#bcc332,#ceb017,#de9c08,#ec8515);
-    border-radius: 50px;
-    padding: 22px 44px;
-    color: #fff;
-    font-family: 'Poppins';
-    font-weight: 700;
-    border: 0;
-   
-}
-.eightPage-second-container-FButton{
-  margin-left: 10px;
-   border-radius: 50px;
-    padding: 22px 44px;
-    font-family: 'Poppins';
-    font-weight: 700;
-    border: 2px solid white;
-    background-color: transparent;
-    color: #09f;
-   
-}
-.final-page{
-    background-color: #13131c;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    
-}
-.finalPage-heading{
-  margin: 20px;
-  padding: 20px;
-  background-color: #323030;
-}
-.finalPage-heading h3{
-  
-  font-size: 55px;
-    color: #fff;
-    margin: 0 0 10px;
-    font-family: 'Rubik';
-    font-weight: 700;
-    text-align: center;
-}
-#join{
-  -webkit-text-stroke: 1px white;
-   color: transparent;
-    font-style: normal;
-    font-weight: 900;
-}
-#bored{
-    color: #00fff2;
-    font-weight: 900;
-}
-
-.fifthPage-inner-firstHeading{
-  color: white;
-  position:absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
 }
-.fifthPage-inner-ineer-sub{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.fifthPage-inner-secondHeading{
-  color: white;
-  position:absolute;
-  top: 45%;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.fifthPage-inner-second-sub{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.fifthPage-inner-thirdHeading{
-  color: white;
-  position:absolute;
-  top: 75%;
-  left: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.fifthPage-inner-third-sub{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.fifthPage-inner-fourthHeading{
-  color: white;
-  position:absolute;
-  top: 5%;
-  right: -5%;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-direction: column;
-  text-align: left;
 
+.roadMapHeading{
+  color: whitesmoke;
 }
-.fifthPage-inner-fourth-sub{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  
-}
-.fifthPage-inner-fifthhHeading{
-  color: white;
-  position:absolute;
-  top: 35%;
-  right: -5%;
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-direction: column;
-  text-align: left;
-}
-.fifthPage-inner-fifth-sub{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  
-}
-.fifthPage-inner-sixthhhHeading{
-  color: white;
-  position:absolute;
+.roadMapImg{
+  position: absolute;
   bottom: 0;
-  right: -5%;
+}
+.meetTheTeam{
   display: flex;
-  justify-content: center;
-  align-items: baseline;
   flex-direction: column;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: black;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+
+}
+.meetTheTeam h2{
+  color: whitesmoke;
+  
+}
+.team{
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 50px;
+  
+  
+
+}
+.teamMembers{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10x;
+  margin: 10px 20px;
+
+}
+.teamMembers h3, .teamMembers small,.teamMembers span {
+  color: black;
+}
+.FAQ{
+  background-image: url("../public/faq-bg.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+  min-height: 150px;
+  height: 120vh;
+  overflow: hidden;
+  
+}
+.faq-text{
+  margin-top: 50px;
+  color: whitesmoke;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.faq-text div{
+  font-size: 25px;
+  margin: 30px 2px;
+  border-bottom: 1px solid rgb(233, 227, 227);
+  padding: 10px;
+  
+  
+} 
+.images{
+  background-color: black;
+  padding: 50px;
+  position: relative;
 }
 
-svg textPath {
+.images img {
+  margin: 10px;
+  position: relative;
   
-  
-  font-size: 63px;
-	font-family:  sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 20px;
-	fill: white;
-  background: #333;
-  margin-right: 200px;
+
 }
-.sixth-svg{
-  position:absolute;
-  top: 6px;
-  left: 6px;
+.navButton{
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  border-radius: 10px;
+  padding: 20px 10px;
+  color: whitesmoke;
+  cursor: pointer;
+  
+  
+
+}
+.footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.footer-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(233, 227, 227);
+}
+.lastHeading{
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+.roadmapCircles{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5%;
+  
+
+}
+
+.roadmapCircles div img{
+  
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.roadmapCircles div button{
+  background-color: rgb(185, 21, 21);
+  padding: 5px;
+  margin: 5px;
+  border: 0px;
+ border-radius: 5px;
+ color: whitesmoke;
+}
+.sideHeading{
+  margin-left:770px;
+}
+.roadmApText{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px 50px;
+  margin-bottom: 200px;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+@media screen and (max-width: 882px) {
+  .header{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  
+  .images img{
+       width: 60%;
+       height: 35%;
+       text-align: center;
+  }
+  .sideHeading{
+    margin-left:200px;
+  }
+  .header a{
+    margin: 5px 5px;
+    padding: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .images{
+    text-align: center;
+    
+   
+    
+  
+  }
+ 
+  
+}
+.imagesWraper{
+  background-color: black;
+   
+}
+
+@media screen and (max-width: 800px) {
+  .header{
+    display: flex;
+    
+  }
+  .header a{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .header a img{
+    margin-left: 2px;
+    height: 30px;
+    width: 30px;
+    
+  }
+  .teamMembers img{
+     height: 50px;
+     width: 70px;
+  }
+}
+#number{
+  color: rgb(185, 21, 21);
+}
+.anewers{
+  display:none;
+}
+.answerVisible{
+  background-color:rgb(185, 21, 21) ;
+  display: block;
+  border: 0px;
+}
+#achor{
+  opacity: 100% !important;
+  color: white;
+}
+#no{
+  color: white;
+  font-size: 30px;
+}
+#te{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 8.5px;
+  padding-top: 2px;
+}
+@font-face {
+  font-family: "veener";
+  src: url("../public/font/Veneer.ttf");
+  
+  
+}
+body{
+  font-family: "veener";
+  
+  
+}
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  
+  background-image: url("../public//banner.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+  
+
+}
+
+.header{
+  font-family: "veener";
+  background-image: url("../public/nav-bar.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 1000px;
   
   
   
+}
+.header a{
+  margin: 5px 30px;
+  padding: 2px;
+  color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  opacity: 1;
+  
+  
+}
+.header a img{
+  margin-left: 5px;
+}
+.headerlogo{
+  width: 150px;
+  margin-right: 40px;
+}
+
+.home{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 40px;
+  padding: 50px;
+  
+  
+}
+.home-sub-text{
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+
+  
+}
+.home-sub-text h2{
+  font-size: 30px;
+  font-weight: 300px;
+} 
+.colored{
+  font-size: 60px;
+}
+.evil-text{
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  border-radius: 5px;
+  padding: 2px;
+}
+.home-button{
+  margin-top: 10px;
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: bold;
+  
+  cursor: pointer;
+  width: 200px;
+  
+}
+.calender{
+display: flex;
+flex-direction: column;
+background-color: rgb(185, 21, 21);
+border-radius: 10px;
+padding: 5px 5px;
+margin: 10px 10px;
+padding: 10px 10px;
+align-items: center;
+width: 30px;
+}
+.main-calender{
+  display: flex;
+}
+
+#bottom-red{
+  background-color: rgb(185, 21, 21);
+  margin-top: 0px;
+  padding: 20px 0px;
+  border: 0px;
+  border-radius: 5px;
+  
+
+}
+
+
+
+.RoadMap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  position: relative;
+  background-image: url("../public/road-map-bg.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  min-height: 100vh;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+  
+
+}
+
+.roadMapHeading{
+  color: whitesmoke;
+}
+.roadMapImg{
+  position: absolute;
+  bottom: 0;
+}
+.meetTheTeam{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: black;
+  border-bottom:  2px solid  rgb(185, 21, 21);
+
+}
+.meetTheTeam h2{
+  color: whitesmoke;
+  
+}
+.team{
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 50px;
+  
+  
+
+}
+.teamMembers{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10x;
+  margin: 10px 20px;
+
+}
+.teamMembers h3, .teamMembers small,.teamMembers span {
+  color: black;
+}
+.FAQ{
+  background-image: url("../public/faq-bg.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+  min-height: 150px;
+  height: 120vh;
+  overflow: hidden;
+  
+}
+.faq-text{
+  margin-top: 50px;
+  color: whitesmoke;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.faq-text div{
+  font-size: 25px;
+  margin: 30px 2px;
+  border-bottom: 1px solid rgb(233, 227, 227);
+  padding: 10px;
+  
+  
+} 
+.images{
+  background-color: black;
+  padding: 50px;
+  position: relative;
+}
+
+.images img {
+  margin: 10px;
+  position: relative;
+  
+
+}
+.navButton{
+  background-color: rgb(185, 21, 21);
+  border: 0;
+  border-radius: 10px;
+  padding: 20px 10px;
+  color: whitesmoke;
+  cursor: pointer;
+  
+  
+
+}
+.footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.footer-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(233, 227, 227);
+}
+.lastHeading{
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+}
+.roadmapCircles{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 5%;
+  
+
+}
+
+.roadmapCircles div img{
+  
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.roadmapCircles div button{
+  background-color: rgb(185, 21, 21);
+  padding: 5px;
+  margin: 5px;
+  border: 0px;
+ border-radius: 5px;
+ color: whitesmoke;
+}
+.sideHeading{
+  margin-left:770px;
+}
+.roadmApText{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px 50px;
+  margin-bottom: 200px;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+@media screen and (max-width: 882px) {
+  .header{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  
+  .images img{
+       width: 60%;
+       height: 35%;
+       text-align: center;
+  }
+  .sideHeading{
+    margin-left:200px;
+  }
+  .header a{
+    margin: 5px 5px;
+    padding: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .images{
+    text-align: center;
+    
+   
+    
+  
+  }
+ 
+  
+}
+.imagesWraper{
+  background-color: black;
+   
+}
+
+@media screen and (max-width: 800px) {
+  .header{
+    display: flex;
+    
+  }
+  .header a{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .header a img{
+    margin-left: 2px;
+    height: 30px;
+    width: 30px;
+    
+  }
+  .teamMembers img{
+     height: 50px;
+     width: 70px;
+  }
+}
+#number{
+  color: rgb(185, 21, 21);
+}
+.anewers{
+  display:none;
+}
+.answerVisible{
+  background-color:rgb(185, 21, 21) ;
+  display: block;
+  border: 0px;
+}
+#achor{
+  opacity: 100% !important;
+  color: white;
+}
+#no{
+  color: white;
+  font-size: 30px;
+}
+#te{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 8.5px;
+  padding-top: 2px;
 }
